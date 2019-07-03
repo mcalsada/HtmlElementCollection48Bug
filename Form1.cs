@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
 					try
 					{
 						object[] args = new object[1];
-						args[0] = "0";
+						args[0] = 0;
 
 						var result = item.Invoke(bodyElement, args);						
 						MessageBox.Show("Found it..." + (result as HtmlElement).InnerHtml.ToString());
@@ -60,8 +60,6 @@ namespace WindowsFormsApp1
 			{
 				MessageBox.Show("Missing");
 			}
-
-			
 		}
 	}
 }
